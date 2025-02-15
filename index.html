@@ -97,5 +97,27 @@
       </div>
       <button class="submit" onclick="submitRating()">SUBMIT</button>
     </div>
+    <script>
+      function rate(value) {
+        const buttons = document.querySelectorAll(".rating button");
+        buttons.forEach((button) => {
+          button.classList.remove("selected");
+          if (button.textContent === value.toString()) {
+            button.classList.add("selected");
+          }
+        });
+      }
+
+      function submitRating() {
+        const selectedRating = document.querySelector(".rating .selected");
+        if (selectedRating) {
+          alert(
+            `You rated us ${selectedRating.textContent} out of 5. Thank you for your feedback!`
+          );
+        } else {
+          alert("Please select a rating before submitting.");
+        }
+      }
+    </script>
   </body>
 </html>
