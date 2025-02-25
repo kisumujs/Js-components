@@ -140,5 +140,7 @@ class LoginForm extends HTMLElement {
                             padding: 8px;
                         }
                     }`;
+                    this.shadowRoot.append(style, container);
     }
 }
+customElements.define('login-form', LoginForm);
