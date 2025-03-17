@@ -20,7 +20,6 @@ ul {
   --primary-color-2: #f8f9fa;
   --secondary-color: #5f6266;
   --secondary-color-2: #cfd1d4;
-  --accent-color: #a5a9ae;
   --span-color: #ffaa00;
 
   --transition: 1s ease-in-out;
@@ -116,12 +115,12 @@ body.dark-theme header .navbar .navs .nav-links .link:hover {
 
 header .navbar .navs .nav-links .link.active {
   font-weight: 800;
-  color: var(--span-color);
+  color: var(--span-color) !important;
 }
 
 body.dark-theme header .navbar .navs .nav-links .link.active {
   font-weight: 800;
-  color: var(--span-color);
+  color: var(--span-color) !important;
 }
 
 header .navbar .mode-toggler,
